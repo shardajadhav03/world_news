@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body , html{
+    overflow-x: hidden;
+}
+
+/* ------ header ------ */
+header{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(/image/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.containt h1 {
+    background-color: red;
+    font-size: 9vmin;
+    padding-bottom: 1.5vmin;
+    letter-spacing: 2px;
+}
+.containt h3 {
+    font-size: 6vmin;
+    padding-bottom: 1.5vmin;
+    letter-spacing: 2px;
+}
+
+
+/* -------- Events -------- */
+
+/* upcoming news */
+.news{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(76, 76, 126);
+    margin: 60px;
+   
+}
+.line{
+    display: flex;
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+/* Images */
+#events .container .text-center .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.row{
+    display: flex;
+}
+#events .row .col{
+    flex: 1;
+    display: block;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    position: relative;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Link */
+.col .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding-bottom: 1.5vmin;
+    letter-spacing: 1px;
+}
+.link a{
+    font-size: 3vmin;
+    color: black;
+    text-decoration: none;
+
+}
+.link a:hover{
+    text-decoration: underline;
+}
+
+
+/* ------ News pages ------ */
+.khabr{
+  margin: 30px;
+}
+.khabr p{
+    font-size: 2.5vmin;
+    line-height: 200%;
+    text-indent: 5em;
+    padding-bottom: 1.5vmin;
+    letter-spacing: 1px;
+}
+.para img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 1280px;
+}
+.para{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+.khabr h1{
+    font-size: 6vmin;
+    line-height: 1.06667;
+    font-weight: 500;
+    font-family: "minion-pro",Georgia,Times,"Times New Roman",serif;
+}
+.para h3{
+    font-size: 3vmin;
+}
+
+
+
+
+@media (max-width: 500px) {
+    .row{
+        /* flex: 100%; */
+        width: 100%;
+        flex-direction: column;
+    }
+   
+    .link a{
+        font-size: 5vmin;
+    }
+    .image{
+        width: 100%;  
+        height: auto;  
+    
+    }
+    header{
+        width: 100vw;
+    height: 50vh;
+    }
+
+}
